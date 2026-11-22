@@ -93,7 +93,7 @@ public class Player : MonoBehaviour
         if (hit.collider)
             IsGrounded = true;
 
-        if (IsGrounded && GetComponent<Rigidbody2D>().linearVelocityY < 0)
+        if (IsGrounded && GetComponent<Rigidbody2D>().linearVelocityY <= 0)
             _jumpsRemaining = 2;
     }
 
